@@ -18,9 +18,11 @@
 
 </head>
 <body>
-  <div class="background-image">
-    <img src="src/images/bg-desktop.svg" alt="">
-  </div>
+ 
+  <picture class="background-image">
+    <source srcset="src/images/bg-mobile.svg" media="(max-width: 600px)">
+    <img src="src/images/bg-desktop.svg">
+  </picture>
 
   <header class="header"> 
     <img src="src/images/logo.svg" alt="">
