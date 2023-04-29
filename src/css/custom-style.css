@@ -53,6 +53,7 @@ body{
     border-radius: 50px;
     border: none;
     box-shadow: 1px 1px 1px black;
+    transition: 0.3s;
     
 }
 
@@ -60,6 +61,7 @@ body{
     background-color: rgb(253, 160, 176);
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .footer{
@@ -81,6 +83,7 @@ body{
 
 .footer .social a i:hover{
     color: rgb(253, 160, 176);
+    transition: 0.3s;
 }
 
 .footer .attribution { 
