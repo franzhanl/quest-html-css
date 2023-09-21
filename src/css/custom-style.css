@@ -1,64 +1,60 @@
-body{
-    background-color: rgb(147, 62, 228);
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
-.background-image img{
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    width: auto;
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
     height: 100%;
+    justify-content: space-between;
 }
 
 .header{
     display: flex;
     align-items: center;
-    padding: 30px;
-
+    padding: 80px 0;
 }
 
-.content{
+.main{
     display: flex;
-    padding-left: 30px;
-
+    gap: 50px;
 }
 
 .image{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .introduction{
     display: flex;
     flex-direction: column;
-    padding: 3% 5% 1% 3%;
-    width: 50%;
-    height: 100%;
-}
-
-.introduction h1, p, div{
-    padding-top: 10px;
+    padding-top: 40px;
 }
 
 .introduction p{
-    margin-top: 10px;
     line-height: 25px;
+    padding-top: 20px;
 }
 
-.introduction .btn-register{
+.btn-register{
     margin-top: 30px;
     padding: 20px 80px;
     background-color: white;
-    color: blueviolet;
+    color: hsl(257, 40%, 49%);
     border-radius: 50px;
     border: none;
     box-shadow: 1px 1px 1px black;
     transition: 0.3s;
-    
+    font-size: 16px;
 }
 
-.introduction .btn-register:hover{
-    background-color: rgb(253, 160, 176);
+.btn-register:hover{
+    background-color: hsl(300, 69%, 71%);
     color: white;
     cursor: pointer;
     transition: 0.3s;
@@ -66,50 +62,45 @@ body{
 
 .footer{
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    justify-content: right;
+    padding: 20px;
 }
 
-.footer .social{
-    text-align: right;
-    padding-right: 100px;
+.social a{
+    padding: 0 5px;
 }
 
-.footer .social a{
-    padding: 5px;
+.social a i{
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 100%;
 }
 
-.footer .social a i:hover{
-    color: rgb(253, 160, 176);
+.fa-facebook-f{
+    width: 20px;
+    text-align: center;
+}
+
+.social a i:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
     transition: 0.3s;
 }
 
-.footer .attribution { 
-    font-size: 11px; 
-    text-align: center;
- }
+/* 1366x768 */
+@media (max-height: 650px) {  
+    .header{
+        padding: 0;
+    }
 
-.footer .attribution a { 
-    color: hsl(228, 45%, 44%);
-    text-decoration: none;
-    color: black;
- }
-
+    .image{
+        height: 400px;
+    }
+}
  /* --- MOBILE ---*/
- @media (max-width: 375px) {  
-    h1 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 15px;
-    }
-    
-    .background-image img{
-        width: 100%;
-        height: auto;
+ @media (max-width: 415px) {  
+    .header{
+        padding: 40px 0;
     }
 
     .header img{ 
@@ -117,9 +108,17 @@ body{
     }
     
     .content{
+        width: 85%;
+    }
+
+    .main{
         flex-direction: column;
         align-items: center;
-        padding: 28px;
+    }
+
+    .image{
+        width: 100%;
+        height: auto;
     }
 
     .introduction{
@@ -130,18 +129,16 @@ body{
         line-height: normal;
     }
 
-    .introduction .btn-register{
+    .btn-register{
         padding: 10px 80px;
     }
+
+    .footer{
+        justify-content: center;
+    }
    
-    .footer .social{
+    .social{
         text-align: center;
         padding: 20px;
     }
-
-    .footer .attribution { 
-        font-size: 11px; 
-        text-align: center;
-     }
-    
  }
