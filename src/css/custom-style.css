@@ -98,7 +98,7 @@
     }
 }
  /* --- MOBILE ---*/
- @media (max-width: 415px) {  
+ @media (max-width: 950px) {  
     .header{
         padding: 40px 0;
     }
