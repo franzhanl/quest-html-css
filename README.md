@@ -3,6 +3,9 @@
 O projeto é um desafio frontend proporcionado pelo Huddle, 
 ele possui responsividade para mobile e interação para os links.
 
+## Link para visualização
+https://franzhanl.github.io/quest-html-css/
+
 ## Desktop
 ![Desktop](src/images/portifolio-desktop.png)
 
